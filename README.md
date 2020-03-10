@@ -17,8 +17,7 @@ PHP 7.3^
 
 ``` git clone https://github.com/audhchh21/ShortUrl_Laravel7.git ```
 
-# open Folder Project
-
+> # open Folder Project
 > create .env and copy code 
 
 ```env
@@ -70,22 +69,16 @@ MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 ```
 
-> Install
-
-``` composer i ```
-
-``` npm i ```
+> # Install
+> ``` composer i ```
+> ``` npm i ```
 
 > ## Create Database
 > create database name nice_shorts
-
-``` php artisan migrate ```
-
+> ``` php artisan migrate ```
 > Run...
-
-``` php artisan serve --port=8000 ```
-
-``` npm run watch ```
+>``` php artisan serve --port=8000 ```
+> ``` npm run watch ```
 
 
 
