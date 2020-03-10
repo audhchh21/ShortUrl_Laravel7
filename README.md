@@ -19,8 +19,7 @@ PHP 7.3^
 
 # open Folder Project
 
-# create .env
-# copy 
+> create .env and copy code 
 
 ```env
 APP_NAME=Laravel
