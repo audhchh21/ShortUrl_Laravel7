@@ -4,9 +4,12 @@
             <div class="form-row">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control form-control-lg border border-secondary rounded-0 p-5"
-                        placeholder="https://" v-model="link">
+                        placeholder="https://" v-model="link"
+                        pattern="(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})"
+                        required>
                     <div class="input-group-append">
-                        <button class="btn btn-lg btn-outline-secondary rounded-0 px-5" type="button" title="Click" v-on:click="addShorturl">
+                        <button class="btn btn-lg btn-outline-secondary rounded-0 px-5" type="button" title="Click"
+                            v-on:click="addShorturl">
                             <i class="icofont-hand-drag1 icofont-2x"></i>Click
                         </button>
                     </div>
@@ -23,7 +26,8 @@
             <div class="row">
 
                 <div class="col-4 text-center px-5">
-                    <qrcode-vue :size="qrcode.size" :level="qrcode.level" :renderAs="qrcode.renderas" :value="url" ></qrcode-vue>
+                    <qrcode-vue :size="qrcode.size" :level="qrcode.level" :renderAs="qrcode.renderas" :value="url">
+                    </qrcode-vue>
                 </div>
                 <div class="col-8">
                     <div class="text-right">
@@ -33,8 +37,8 @@
                     <div class="card border border-secondary rounded-0">
                         <div class="card-body">
                             <div class="input-group">
-                                <input type="text" class="form-control border border-secondary rounded-0"
-                                    :value="url" placeholder="" readonly>
+                                <input type="text" class="form-control border border-secondary rounded-0" :value="url"
+                                    placeholder="" readonly>
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary rounded-0" type="button" id="button-addon2"
                                         title="Copy">
@@ -102,8 +106,8 @@
                         console.log(err)
                         this.status = false
                     })
-
             }
         },
     }
+
 </script>

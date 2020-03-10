@@ -1965,6 +1965,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -38540,7 +38544,13 @@ var render = function() {
             ],
             staticClass:
               "form-control form-control-lg border border-secondary rounded-0 p-5",
-            attrs: { type: "text", placeholder: "https://" },
+            attrs: {
+              type: "text",
+              placeholder: "https://",
+              pattern:
+                "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
+              required: ""
+            },
             domProps: { value: _vm.link },
             on: {
               input: function($event) {
