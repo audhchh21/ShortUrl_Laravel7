@@ -76,8 +76,11 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
 > ## Create Database
 > create database name nice_shorts
+
 > ``` php artisan migrate ```
+
 > Run...
+
 >``` php artisan serve --port=8000 ```
 
 > ``` npm run watch ```
