@@ -71,6 +71,7 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
 > # Install
 > ``` composer i ```
+
 > ``` npm i ```
 
 > ## Create Database
@@ -78,6 +79,7 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 > ``` php artisan migrate ```
 > Run...
 >``` php artisan serve --port=8000 ```
+
 > ``` npm run watch ```
 
 
