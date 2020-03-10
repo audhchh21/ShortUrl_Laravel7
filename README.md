@@ -11,16 +11,23 @@
 
 PHP 7.3^
 
-## Star
+## Start
+
+> Clone
+
 ``` git clone https://github.com/audhchh21/ShortUrl_Laravel7.git ```
+
+> Install
 
 ``` composer i ```
 
 ``` npm i ```
-
+> ## Create Database
 > create database name nice_shorts
 
 ``` php artisan migrate ```
+
+> Run...
 
 ``` php artisan serve --port=8000 ```
 
